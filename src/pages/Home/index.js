@@ -1,28 +1,15 @@
-import React,{useState,useEffect} from "react";
-import getGifs from "../../services/getGifs";
+import React,{useState} from "react";
 import ListOfGifs from "../../components/ListOfGifs/ListOfGifs";
 import { Link,useLocation } from "wouter"
 import "./Home.css"
+import useGifs from "../../hooks/useGifs";
 
 export default function Home() {
     const POPULAR_GIFS = ["Messi", "Mundial katar", "Argentina"];
     const [keyword,setKeyword]=useState('');
     const [,pushLocation] =useLocation();
 
-    // codigo reutilizado
-    const [,setLoading]=useState(false)
-    const [gifs,setGifs]=useState([]);
-
-    useEffect(function (){
-        setLoading(true)
-        getGifs({ keyword:'boca junior' })
-            .then(gifs => {
-                setGifs(gifs)
-                setLoading(false)
-            })
-    },[keyword]) 
-
-    //<---------------------------
+    const {loading,gifs}=useGifs({keyword:'Boca Junior'})
 
     const handleChange = (e)=>{
         setKeyword(e.target.value);
