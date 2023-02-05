@@ -1,0 +1,20 @@
+.lista-gifs {
+    list-style: none;
+}
+
+.gif-populate {
+    text-decoration: none;
+    color: #61dafb;
+    font-size: 24px;
+}
+
+.logo {
+    width: 35%;
+    margin-bottom: 45px;
+}
+
+.link-populate {
+    color: #61dafb;
+    font-size: 24px;
+    text-decoration: none;
+}

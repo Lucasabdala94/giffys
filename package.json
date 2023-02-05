@@ -8,8 +8,10 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-loader-spinner": "^5.3.4",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "wouter": "^2.9.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,7 +40,7 @@
   "devDependencies": {
     "standart": "6.1.0"
   },
-  "esLintConmfig":{
-    "extends":"./node_modules/standart/eslintrc.json"
+  "esLintConmfig": {
+    "extends": "./node_modules/standart/eslintrc.json"
   }
 }
