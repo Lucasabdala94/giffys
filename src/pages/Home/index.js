@@ -9,7 +9,7 @@ export default function Home() {
     const [keyword,setKeyword]=useState('');
     const [,pushLocation] =useLocation();
 
-    const {loading,gifs}=useGifs({keyword:'Boca Junior'})
+    const {loading,gifs}=useGifs();
 
     const handleChange = (e)=>{
         setKeyword(e.target.value);
